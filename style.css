@@ -30,3 +30,41 @@
     min-height: 44px;
   }
 }
+
+
+/* Correção de carregamento e exibição das imagens */
+.hero-photo img,
+.product-image img {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  max-width: 100%;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+.product-image {
+  display: block;
+  min-height: 200px;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .hero-photo img {
+    height: 340px;
+  }
+
+  .product-image {
+    height: 260px;
+  }
+}
